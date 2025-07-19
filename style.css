@@ -463,7 +463,7 @@ section.active {
   transition: .2s;
 }
 .resume-details.skills .resume-item:hover span {
-  top: -25%;
+  top: -4%;
   opacity: 1;
   transform: scale(1);
 }
