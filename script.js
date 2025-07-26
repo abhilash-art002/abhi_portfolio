@@ -96,6 +96,21 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_p56flaq", "template_tdm8z8h", this)
+    .then(() => {      
+      this.reset();
+      
+    })
+    .catch((error) => {
+      console.error("EmailJS Error:", error);
+      alert("Failed to send message. Please try again.");
+    });
+});
+
+
 
 
 
